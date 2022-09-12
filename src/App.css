@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'SEGA LOGO FONT';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SEGA LOGO FONT'), url('./SEGA.woff') format('woff');
+  }
 body{
     background: linear-gradient(90deg, rgb(65, 145, 131), rgb(9, 9, 99) 80.84%);
     
@@ -7,6 +13,7 @@ body{
   
   }
 h1{
+  font-family: 'SEGA LOGO FONT';
     text-align : center;
     color: aqua;
     font-family: ;
@@ -34,13 +41,14 @@ input{
   padding-bottom: 5%;
 }
 .contain:hover{
-  background-color: chocolate;
-  box-shadow: ;
+  background-color:#FFA300;
+  transform: scale(1.1);
 }
 .contain{
  background-color: #8af4cf;
  justify-content: center;
  width: 20%;
+ border-radius: 2%;
 
 }
 .name-contain{

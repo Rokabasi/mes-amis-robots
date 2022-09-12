@@ -3,11 +3,12 @@ import './App.css';
 import InputSearch from './InputSearch';
 import Title from './Title';
 
-function App() {
+function App(props ) {
   return (
     <div className="App">
       <Title/>
-      <InputSearch/>
+      <InputSearch   />
+      
     </div>
   );
 }
