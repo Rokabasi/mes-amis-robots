@@ -20,12 +20,10 @@ export default function InputSearch( props){
   const researchData = (e) => {
     setResearchRobot(e.target.value)
   }
-
-   function robotInfo(robot){
-      setRobotDetails(prevrobotDetails => !prevrobotDetails );
-      setRobotData(robot);
-      // console.log(robotData);
-   }
+  function robotInfo(robot) {
+    setRobotDetails(prevrobotDetails => !prevrobotDetails);
+    setRobotData(robot);
+  }
  
   return(
     <>
@@ -37,27 +35,24 @@ export default function InputSearch( props){
           :
           (
             <>
+            <h1>MES AMIS ROBOTS</h1>
             <input value={researchRobot}  type="text" placeholder="Rechercher par un nom" onChange={researchData}  />
     
             <div className='main-contain'>
-             
-                {researchRobot.length < 3 ?
-                ( data.map(robot => (
-                    <div key={robot.id} className='contain' mydata= {robot.id} onClick={() => robotInfo(robot)} >
-                        <img src={`https://robohash.org/${robot.id}`} alt='robot profil' className='robot-logo'></img>
-                        <h3 className='name-contain'>{robot.name}</h3> 
-                        <p className='email-contain'>{robot.email}</p>
-                        
-                    </div>))) : 
-                ( data.filter((robot) => 
-                   robot.name.toLowerCase().includes(researchRobot.toLowerCase())
-                ).map(robot => (
-                  <div key={robot.id} className='contain' >
+
+                {
+                
+                data.filter((robot) => 
+                  researchRobot.length < 3 ?  robot :
+                  (robot.name.toLowerCase().includes(researchRobot.toLowerCase())
+                )).map(robot => (
+                  <div key={robot.id} className='contain' onClick={() => robotInfo(robot)}>
                       <img src={`https://robohash.org/${robot.id}`} alt='robot profil' className='robot-logo'></img>
                       <h3 className='name-contain'>{robot.name}</h3> 
                       <p className='email-contain'>{robot.email}</p>
-                  </div>)))
-                  }
+                  </div>))
+                
+                }
                
             </div>
             </>
