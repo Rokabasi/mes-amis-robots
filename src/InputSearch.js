@@ -30,7 +30,10 @@ export default function InputSearch( props){
     
         {
           robotDetails ? (
+            <>
+            <button className="btn-return" onClick={() => robotInfo()}>Retour</button>
             <RobotInfo robotData={robotData}/>
+            </>
           )
           :
           (
