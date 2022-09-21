@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'SEGA LOGO FONT';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SEGA LOGO FONT'), url('./SEGA.woff') format('woff');
+  }
+body{
+    background: linear-gradient(90deg, rgb(65, 145, 131), rgb(9, 9, 99) 80.84%);
+    
+    margin : 0;
+    padding :0;
+  }
+h1{
+  font-family: 'SEGA LOGO FONT';
+    text-align : center;
+    color: aqua;
+    font-weight: 500;
+  }
+input{
+    display: flex;
+    margin-right : auto;
+    margin-left:auto;
+    border: none;
+    padding: 10px;
+    outline: none;
+    background-color: rgb(207, 236, 227);
+    justify-items: center;
+}
+.main-contain{
+  margin-top: 2%;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem ;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5%;
+}
+.contain:hover{
+  background-color:#FFA300;
+  transform: scale(1.1);
+}
+.contain{
+ background-color: #8af4cf;
+ justify-content: center;
+ width: 20%;
+ border-radius: 2%;
+
+}
+.name-contain{
+  text-align: center;
+}
+.email-contain{
+text-align: center;
+padding-bottom: 2%;
+}
+.robot-logo{
+  
+  height: 200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.main-contain-research{
+  margin-left: auto;
+  margin-left: auto;
+}
+.main-contain{
+  margin-top: 2%;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem ;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5%;
+}
+.contain:hover{
+  background-color:#FFA300;
+  transform: scale(1.1);
+}
+.main-contain-research{
+ background-color: #8af4cf;
+ justify-content: center;
+ width: 20%;
+ border-radius: 2%;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 5%;
+
+}
+.main-contain-research:hover{
+  background-color: #FFA300;
+}
+
+.robot-logo-research{ 
+  height: 40%;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10%;
+}
+.name-contain-research{
+  text-align: center;
+}
+.email-contain-research{
+text-align: center;
+padding-bottom: 2%;
+}
+.btn-return{
+  margin-top: 2%;
+  margin-right: auto;
+  background-color:#8af4cf ;
+  padding: 1%;
+  border: 1px solid #8af4cf;
+  margin-left: 2%;
+}
+Link{
+  text-decoration: none;
+}
