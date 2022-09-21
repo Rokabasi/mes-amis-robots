@@ -32,7 +32,7 @@ export default function InputSearch( ){
                   (robot.name.toLowerCase().includes(researchRobot.toLowerCase())
                 )).map(robot => (
                     <div key={robot.id} className='contain' >
-                      <Link to={`/profile/${robot.id}`}>
+                      <Link to={`/profile/${robot.id}`} className="link">
                         <img src={`https://robohash.org/${robot.id}`} alt='robot profil' className='robot-logo'></img>
                         <h3 className='name-contain'>{robot.name}</h3> 
                         <p className='email-contain'>{robot.email}</p>

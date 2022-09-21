@@ -20,7 +20,6 @@ function RobotInfo(){
     return(
         <>
             <div className="main-contain-research">
-               
                 <div key={robotInfo.id} className='contain-research' >
                         <img src={`https://robohash.org/${robotInfo.id}`} alt='robot profil' className='robot-logo-research'></img>
                         <h3 className='name-contain-research'>{robotInfo.name}</h3> 

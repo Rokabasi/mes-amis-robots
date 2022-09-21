@@ -115,9 +115,10 @@ padding-bottom: 2%;
   margin-right: auto;
   background-color:#8af4cf ;
   padding: 1%;
-  border: 1px solid #8af4cf;
+  border: 1px solid #81e7c4;
   margin-left: 2%;
 }
-Link{
+.link{
   text-decoration: none;
+  color: black;
 }
